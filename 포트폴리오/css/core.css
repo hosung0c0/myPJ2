@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* 넥슨포폴 공통핵심 CSS - core.css */
+/* 공용클래스 */
+
+/* 
+  [ 공통 클래스 이름정의 ]
+  1. ibx - inside box 속박스
+  2. rbx - ratio box 비율박스
+  3. rbxIn - box in ratio box 비율유지 속박스
+  4. fbx - flex box 플렉스 디스플레이 박스
+  5. pt1, pt2 - part1, part2 각 부분박스
+  6. cbx - content box 내용박스
+  7. bgi - background image 관련 속성
+*/
+
+/* 공사중 표시 */
+body * {
+    outline: 1px dashed gray;
+  }
+  
+  /************* 2. 공통 class *************/
+  
+  /* 2-1. 중앙 속박스 */
+  .ibx{
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  
+  /* 2-2. 비율유지박스 */
+  .rbx{
+    /* 부모자격필수!
+    (비율유지속박스 앱솔루트의 부모) */
+    position: relative;
+  }
+  
+  /* 2-3. 비율유지속박스 */
+  .rbxIn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* 부모는? .rbx */
+  }
+  
+  /* 2-4. 플렉스 박스 */
+  .fbx{
+    display: flex;
+  }
+  /* 플렉스 적용하위 .cbx */
+  /* .fbx .cbx{
+    flex: 1;
+    등분할 설정
+    height값을 100% 안줘도
+    자동으로 부모박스를 채운다!
+  } */
+  
+  /* 2-5. 유형별 박스 */
+  /* 컨텐츠박스형 */
+  .pt1{
+    height: 486px;
+    width: 100%;
+  }
+  /* 컨텐츠박스형 */
+  .pt2{
+    height: 650px;
+  }
+  /* 컨텐츠박스형 */
+  .pt3{
+    height: 650px;
+  }
+  /* 컨텐츠박스형 */
+  .pt4{
+    height: 650px;
+  }
+  /* 컨텐츠박스형 */
+  .pt5{
+    height: 650px;
+  }
+  /* 컨텐츠박스형 */
+  .pt6{
+    height: 650px;
+  }
+  
+  /* 2-6. 컨텐츠 박스 */
+  /* .cbx{
+    크기유지박스 설정 - 보더,패딩 포함
+    box-sizing: border-box;
+    padding: 15px;
+  } */

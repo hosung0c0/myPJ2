@@ -1,91 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>레이아웃 연습3</title>
-    <link rel="stylesheet" href="./css/NEXON.css">
+    <title>넥슨포폴</title>
+    <!-- 메인CSS -->
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
     <!-- 샘플 사이트 
     https://www.seoulmusicfestival.co.kr/kor/ -->
+    
 
-    <!-- 
-        [ 구성분석 ]
-        -> 7개 파트 : 겉박스 + 속박스(max-width 마영오박스)
-            (1) 상단영역
-            (2) 컨텐츠영역1 
-            (3) 컨텐츠영역2 
-            (4) 컨텐츠영역3 
-            (5) 컨텐츠영역4 
-            (6) 하단영역
+    <!-- 1. 상단영역 -->
+    <div id="top">
+        <header class="top ibx">
 
-     -->
-
-    <!-- (1) 상단영역 -->
-    <div>
-        <header class="ibx top">
-            <h1>상단영역</h1>
-            <div class="cbx col-2"></div>
-            <div class="cbx col-8"></div>
-            <div class="cbx col-2"></div>
         </header>
     </div>
-    <!-- (2) 컨텐츠영역1 -->
-    <div>
-        <section class="ibx cont ct1">
-            <h2>배너파트, 추천게임, 로그인</h2>
-            <div class="cbx col-12"></div>
-            <div class="cbx col-2"></div>
-            <div class="cbx col-5"></div>
-            <div class="cbx col-3"></div>
-            <div class="cbx col-2"></div>
-        </section>
-    </div>
-    <!-- (3) 컨텐츠영역2 -->
-    <div>
-        <section class="ibx cont ct2">
-            <h2>신규게임, 게임랭킹</h2>
-            <div class="cbx col-2"></div>
-            <div class="cbx col-2"></div>
-            <div class="cbx col-2"></div>
-            <div class="cbx col-2"></div>
-            <div class="cbx col-2"></div>
-            <div class="cbx col-2"></div>
-            <div class="cbx col-2"></div>
-            <div class="cbx col-2"></div>
-            <div class="cbx col-2"></div>
-            <div class="cbx col-2"></div>
-            <div class="cbx col-2"></div>
-            <div class="cbx col-2"></div>
-          
+    <!-- 2. 메인영역 -->
+    <div id="cont">
+        <main class="cont ibx">
+            <!-- 유형1:컨텐츠박스1 -->
+            <section class="pt1 rbx">
+                <div class="rbxIn">
+                    <div class="cbx">
 
-        </section>
+                    </div>
+                </div>
+            </section>
+            <!-- 유형2:컨텐츠박스2 -->
+            <section class="pt2 rbx">
+                <div class="rbxIn fbx">
+                    <div class="cbx">
+                        
+                    </div>
+                    <div class="cbx">
+                        
+                    </div>
+                    <div class="cbx">
+                        
+                    </div>
+                </div>
+            </section>
+            <!-- 유형1:컨텐츠박스3 -->
+            <section class="pt1 rbx">
+                <div class="rbxIn">
+                    <div class="cbx">
+
+                    </div>
+                </div>
+            </section>
+            <!-- 유형2:컨텐츠박스4 -->
+            <section class="pt2 rbx">
+                <div class="rbxIn fbx">
+                    <div class="cbx">
+                        
+                    </div>
+                    <div class="cbx">
+                        
+                    </div>
+                    <div class="cbx">
+                        
+                    </div>
+                </div>
+            </section>
+            <!-- 유형1:컨텐츠박스5 -->
+            <section class="pt1 rbx">
+                <div class="rbxIn">
+                    <div class="cbx">
+
+                    </div>
+                </div>
+            </section>
+            <!-- 유형2:컨텐츠박스6 -->
+            <section class="pt2 rbx">
+                <div class="rbxIn fbx">
+                    <div class="cbx">
+                        
+                    </div>
+                    <div class="cbx">
+                        
+                    </div>
+                    <div class="cbx">
+                        
+                    </div>
+                </div>
+            </section>
+            <!-- 유형2:컨텐츠박스7 -->
+            <section class="pt2 rbx">
+                <div class="rbxIn fbx">
+                    <div class="cbx">
+                        
+                    </div>
+                    <div class="cbx">
+                        
+                    </div>
+                    <div class="cbx">
+                        
+                    </div>
+                </div>
+            </section>
+
+        </main>
     </div>
-    <!-- (4) 컨텐츠영역3 -->
-    <div>
-        <section class="ibx cont ct3">
-            <h2>전체게임</h2>
-            <div class="cbx col-6"></div>
-            <div class="cbx col-6"></div>
-        </section>
-    </div>
-    <!-- (5) 컨텐츠영역4 -->
-    <div>
-        <section class="ibx cont ct4">
-            <h2>모바일게임</h2>
-            <div class="cbx col-12"></div>
-        </section>
-    </div>
-    <!-- (6) 하단영역 -->
-    <div>
-        <footer class="ibx info">
-            <h2>하단영역</h2>
-            <div class="cbx col-1"></div>
-            <div class="cbx col-9"></div>
-            <div class="cbx col-2"></div>
+    <!-- 3. 하단영역 -->
+    <div id="info">
+        <footer class="info ibx">
+
         </footer>
     </div>
 
