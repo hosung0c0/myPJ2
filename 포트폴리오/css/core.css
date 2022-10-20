@@ -13,11 +13,14 @@
   7. bgi - background image 관련 속성
 */
 
+
 /* 공사중 표시 */
-body * {
+body *{
     outline: 1px dashed gray;
   }
-  
+  h1{
+  outline: none;
+}
   /************* 2. 공통 class *************/
   
   /* 2-1. 중앙 속박스 */
@@ -48,12 +51,12 @@ body * {
     display: flex;
   }
   /* 플렉스 적용하위 .cbx */
-  /* .fbx .cbx{
+  .fbx .cbx{
     flex: 1;
-    등분할 설정
+    /* 등분할 설정
     height값을 100% 안줘도
-    자동으로 부모박스를 채운다!
-  } */
+    자동으로 부모박스를 채운다! */
+  }
   
   /* 2-5. 유형별 박스 */
   /* 컨텐츠박스형 */
@@ -75,11 +78,11 @@ body * {
   }
   /* 컨텐츠박스형 */
   .pt5{
-    height: 650px;
+    min-height: 650px;
   }
   /* 컨텐츠박스형 */
   .pt6{
-    height: 650px;
+    min-height: 650px;
   }
   
   /* 2-6. 컨텐츠 박스 */
