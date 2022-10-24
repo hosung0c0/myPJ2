@@ -15,12 +15,10 @@
 
 
 /* 공사중 표시 */
-body *{
+#top,.ibx,#cont{
     outline: 1px dashed gray;
   }
-  h1{
-  outline: none;
-}
+
   /************* 2. 공통 class *************/
   
   /* 2-1. 중앙 속박스 */
@@ -68,9 +66,17 @@ body *{
     height: 432px;
     width: 100%;
   }
+  
   /* 컨텐츠박스형 */
   .myInfo{
     height: 496px;
+  }
+  .myInfo h2{
+    display: inline-block;
+    height: 28px;
+    color: #17191d;
+    font: 24px /* NEXON Gothic Bold */;
+    
   }
   /* 컨텐츠박스형 */
   .newGame{
