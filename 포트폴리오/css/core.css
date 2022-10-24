@@ -64,7 +64,7 @@ body *{
   
   /* 2-5. 유형별 박스 */
   /* 컨텐츠박스형 */
-  .ban{
+  .banner{
     height: 432px;
     width: 100%;
   }
