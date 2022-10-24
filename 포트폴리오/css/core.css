@@ -35,6 +35,7 @@ body *{
     (비율유지속박스 앱솔루트의 부모) */
     position: relative;
   }
+ 
   
   /* 2-3. 비율유지속박스 */
   .rbxIn{
@@ -44,6 +45,9 @@ body *{
     bottom: 0;
     right: 0;
     /* 부모는? .rbx */
+  }
+  .part1 .rbxIn{
+    width: 100%
   }
   
   /* 2-4. 플렉스 박스 */
@@ -60,34 +64,34 @@ body *{
   
   /* 2-5. 유형별 박스 */
   /* 컨텐츠박스형 */
-  .pt1{
-    height: 486px;
+  .ban{
+    height: 432px;
     width: 100%;
   }
   /* 컨텐츠박스형 */
-  .pt2{
+  .myInfo{
+    height: 496px;
+  }
+  /* 컨텐츠박스형 */
+  .newGame{
     height: 650px;
   }
   /* 컨텐츠박스형 */
-  .pt3{
+  .rank{
     height: 650px;
   }
   /* 컨텐츠박스형 */
-  .pt4{
-    height: 650px;
-  }
-  /* 컨텐츠박스형 */
-  .pt5{
+  .allGame{
     min-height: 650px;
   }
   /* 컨텐츠박스형 */
-  .pt6{
+  /* .pt6{
     min-height: 650px;
-  }
+  } */
   
   /* 2-6. 컨텐츠 박스 */
   /* .cbx{
-    크기유지박스 설정 - 보더,패딩 포함
-    box-sizing: border-box;
+     크기유지박스 설정 - 보더,패딩 포함 
+     box-sizing: border-box;
     padding: 15px;
   } */
