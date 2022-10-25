@@ -15,88 +15,169 @@
 
 
 /* 공사중 표시 */
-#top,.ibx,#cont{
-    outline: 1px dashed gray;
-  }
+.top,
+.ibx,
+#cont,
+.rbxIn.rbx,
+.myInfo,
+.newGame,
+.newGame,
+.rank,
+.allGame,
+.footer {
+  outline: 1px dashed gray;
+}
 
-  /************* 2. 공통 class *************/
-  
-  /* 2-1. 중앙 속박스 */
-  .ibx{
-    max-width: 1300px;
-    margin: 0 auto;
-  }
-  
-  /* 2-2. 비율유지박스 */
-  .rbx{
-    /* 부모자격필수!
+/************* 2. 공통 class *************/
+
+/* 2-1. 중앙 속박스 */
+.ibx {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* 2-2. 비율유지박스 */
+.rbx {
+  /* 부모자격필수!
     (비율유지속박스 앱솔루트의 부모) */
-    position: relative;
-  }
- 
-  
-  /* 2-3. 비율유지속박스 */
-  .rbxIn{
+  position: relative;
+}
+
+
+/* 2-3. 비율유지속박스 */
+/* .rbxIn{
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    /* 부모는? .rbx */
+    /* 부모는? .rbx 
   }
-  .part1 .rbxIn{
+  .rbxIn{
     width: 100%
-  }
-  
-  /* 2-4. 플렉스 박스 */
-  .fbx{
+  } */
+
+/* 2-4. 플렉스 박스 */
+/* .fbx{
     display: flex;
-  }
-  /* 플렉스 적용하위 .cbx */
-  .fbx .cbx{
+  } */
+/* 플렉스 적용하위 .cbx */
+/* .fbx .cbx{
     flex: 1;
     /* 등분할 설정
     height값을 100% 안줘도
-    자동으로 부모박스를 채운다! */
-  }
+    자동으로 부모박스를 채운다! 
+  } */
+
+
+
+/* 2-5. 유형별 박스 */
+
+/* 상단메뉴 */
+.menu {
+  display: flex;
+  width: 100%;
+}
+
+.menu>div {
+  flex: 1;
+}
+
+/* 게임바로가기버튼 */
+.btnDown{
+  text-align: left;
+  margin-left: 20px;
+
+}
+/* .btnDown a:first-of-type{
   
-  /* 2-5. 유형별 박스 */
-  /* 컨텐츠박스형 */
-  .banner{
-    height: 432px;
-    width: 100%;
-  }
+}
+.btnDown a:last-of-type{
   
-  /* 컨텐츠박스형 */
-  .myInfo{
-    height: 496px;
-  }
-  .myInfo h2{
-    display: inline-block;
-    height: 28px;
-    color: #17191d;
-    font: 24px /* NEXON Gothic Bold */;
-    
-  }
-  /* 컨텐츠박스형 */
-  .newGame{
-    height: 650px;
-  }
-  /* 컨텐츠박스형 */
-  .rank{
-    height: 650px;
-  }
-  /* 컨텐츠박스형 */
-  .allGame{
-    min-height: 650px;
-  }
-  /* 컨텐츠박스형 */
-  /* .pt6{
+} */
+.btnDown>a{
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 17px;
+  line-height: 62px;
+}
+
+/* 로고 */
+.logo{
+  text-align: center;
+}
+
+/* gnb오른쪽(회원가입, 로그인) */
+.gnbRight{
+  
+}
+
+.gnbRight>ul{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  height: 62px;
+  text-align: center;
+}
+
+.gnbRight>ul>li{
+  line-height: 62px;
+}
+.gnbRight>ul>li>a
+{
+  display: block;
+  font-size: 17px;
+  padding: 0 10px;
+
+}
+
+
+/* 배너 */
+.banner {
+  height: 432px;
+  width: 100%;
+}
+
+/* 내정보 */
+.myInfo {
+  position: relative;
+  height: 496px;
+  margin: 76px auto 0;
+
+}
+
+.myInfo h2 {
+  display: inline-block;
+  height: 28px;
+  color: #17191d;
+  font: 24px
+    /* NEXON Gothic Bold */
+  ;
+
+}
+
+/* 컨텐츠박스형 */
+.newGame {
+  height: 650px;
+}
+
+/* 컨텐츠박스형 */
+.rank {
+  height: 650px;
+}
+
+/* 컨텐츠박스형 */
+.allGame {
+  min-height: 650px;
+}
+
+/* 컨텐츠박스형 */
+/* .pt6{
     min-height: 650px;
   } */
-  
-  /* 2-6. 컨텐츠 박스 */
-  /* .cbx{
+
+/* 2-6. 컨텐츠 박스 */
+/* .cbx{
      크기유지박스 설정 - 보더,패딩 포함 
      box-sizing: border-box;
     padding: 15px;
