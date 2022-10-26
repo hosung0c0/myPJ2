@@ -15,7 +15,7 @@
 
 
 /* 공사중 표시 */
-/* .top,
+.top,
 .ibx,
 #cont,
 .rbxIn.rbx,
@@ -26,7 +26,7 @@
 .allGame,
 .footer {
   outline: 1px dashed gray;
-} */
+}
 
 /************* 2. 공통 class *************/
 
@@ -139,11 +139,26 @@
   width: 100%;
 }
 
-/* 내정보 */
+/* 내정보, 추천게임 */
 .myInfo {
-  position: relative;
+  
   height: 496px;
   margin: 76px auto 0;
+
+}
+/* .myInfo>div{
+  display: flex;
+} */
+
+.myInfo .title{
+  
+  height: 28px;
+}
+
+.myInfo .tibt{
+float: right;
+}
+.myInfo.tibt a{
 
 }
 
@@ -151,9 +166,8 @@
   display: inline-block;
   height: 28px;
   color: #17191d;
-  font: 24px
-    /* NEXON Gothic Bold */
-  ;
+  font: 24px;
+  
 
 }
 
