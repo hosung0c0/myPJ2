@@ -24,7 +24,8 @@
 .newGame,
 .rank,
 .allGame,
-.footer {
+.footer
+ .rGame{
   outline: 1px dashed gray;
 }
 
@@ -32,7 +33,7 @@
 
 /* 2-1. 중앙 속박스 */
 .ibx {
-  max-width: 1300px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -141,7 +142,7 @@
 
 /* 내정보, 추천게임 */
 .myInfo {
-  
+  position: relative;
   height: 496px;
   margin: 76px auto 0;
 
@@ -154,14 +155,6 @@
   
   height: 28px;
 }
-
-.myInfo .tibt{
-float: right;
-}
-.myInfo.tibt a{
-
-}
-
 .myInfo h2 {
   display: inline-block;
   height: 28px;
@@ -170,6 +163,36 @@ float: right;
   
 
 }
+.myInfo .tibt{
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
+.rbx>.myInfo>.title>.tibt>a{
+  font-size: 14px;
+  margin-left: 23px;
+  color: #17191d;
+  letter-spacing: -.4px;
+}
+
+.rGame{
+  
+  float: left;
+  width: 805px;
+  height: 342px;
+  margin-top: 30px;
+}
+.rGame ul{
+  display: flex;
+}
+
+.rGame ul li{
+  text-align: center;
+  flex: 1;
+  margin-right: 8px;
+}
+
+
 
 /* 컨텐츠박스형 */
 .newGame {

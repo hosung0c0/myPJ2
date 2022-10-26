@@ -22,7 +22,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     padding: 0;
     border: 0;
     font-size: 100%;
-    /* font: inherit; */
+    font: inherit;
     vertical-align: top;
     border-radius: 0;
     box-sizing: border-box;
