@@ -24,8 +24,7 @@
 .newGame,
 .rank,
 .allGame,
-.footer
- .rGame{
+.footer .rGame {
   outline: 1px dashed gray;
 }
 
@@ -86,18 +85,19 @@
 }
 
 /* 게임바로가기버튼 */
-.btnDown{
+.btnDown {
   text-align: left;
   margin-left: 20px;
 
 }
+
 /* .btnDown a:first-of-type{
   
 }
 .btnDown a:last-of-type{
   
 } */
-.btnDown>a{
+.btnDown>a {
   display: inline-block;
   padding: 0 5px;
   font-size: 17px;
@@ -105,16 +105,14 @@
 }
 
 /* 로고 */
-.logo{
+.logo {
   text-align: center;
 }
 
 /* gnb오른쪽(회원가입, 로그인) */
-.gnbRight{
-  
-}
+.gnbRight {}
 
-.gnbRight>ul{
+.gnbRight>ul {
   display: flex;
   justify-content: flex-end;
   margin-right: 20px;
@@ -122,11 +120,11 @@
   text-align: center;
 }
 
-.gnbRight>ul>li{
+.gnbRight>ul>li {
   line-height: 62px;
 }
-.gnbRight>ul>li>a
-{
+
+.gnbRight>ul>li>a {
   display: block;
   font-size: 17px;
   padding: 0 10px;
@@ -138,6 +136,7 @@
 .banner {
   height: 432px;
   width: 100%;
+  background-image: url();
 }
 
 /* 내정보, 추천게임 */
@@ -147,50 +146,137 @@
   margin: 76px auto 0;
 
 }
+
 /* .myInfo>div{
   display: flex;
 } */
 
-.myInfo .title{
-  
+/* 추천게임 제목 */
+.myInfo .title {
+
   height: 28px;
 }
+
 .myInfo h2 {
   display: inline-block;
   height: 28px;
   color: #17191d;
   font: 24px;
-  
+
 
 }
-.myInfo .tibt{
+
+/* 고객센터, 보안센터 */
+.myInfo .tibt {
   position: absolute;
   top: 8px;
   right: 0;
 }
-.rbx>.myInfo>.title>.tibt>a{
+
+.rbx>.myInfo>.title>.tibt>a {
   font-size: 14px;
   margin-left: 23px;
   color: #17191d;
   letter-spacing: -.4px;
 }
 
-.rGame{
-  
+/* 추천게임들 */
+/* 기본틀 */
+.rGame {
+
   float: left;
   width: 805px;
   height: 342px;
   margin-top: 30px;
 }
-.rGame ul{
+
+.rGame ul {
   display: flex;
 }
 
-.rGame ul li{
+.rGame ul li {
+  position: relative;
   text-align: center;
   flex: 1;
   margin-right: 8px;
+  height: 342px;
 }
+
+/* 첫번째 li */
+.rGame li.only a {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #f78029;
+}
+.rGame li.only .gameReason {
+  width: fit-content;
+  padding: 2px 6px 4px 20px;
+  border-radius: 4px;
+  background-color: #fef3e0;
+  font-weight: 700;
+  color: #f78029;
+  letter-spacing: -.72px;
+}
+
+.rGame .gameCate .pick {
+  background-color: #f78029;
+  text-transform: none;
+}
+
+/* 나머지 li */
+
+/* li 공통 */
+.rGame li a:not(.playtalk) {
+  position: relative;
+  display: block;
+  background-color: #fff;
+  width: 153px;
+  height: 342px;
+}
+.rGame .gameCate span {
+  display: block;
+  width: 32px;
+  height: 16px;
+  margin: 16px 0 0 12px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0;
+  font: 10px Malgun Gothic;
+  font-weight: 700;
+  line-height: 16px;
+  border-radius: 20px;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+.rGame .gameName {
+  width: 129px;
+  height: 36px;
+  margin: 8px 0 4px 12px;
+  font: 14px/18px;
+  color: #17191d;
+}
+.rGame .gameName .name{
+  float: left;
+}
+.rGame .gameReason {
+  position: absolute;
+  top: 308px;
+  left: 12px;
+  display: block;
+  width: 129px;
+  color: #9fa1a7;
+  white-space: nowrap;
+  word-wrap: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+
+
 
 
 
