@@ -134,7 +134,7 @@
 
 /* 배너 */
 .banner {
-  height: 432px;
+  height: 560px;
   width: 100%;
   background-image: url();
 }
@@ -192,11 +192,13 @@
 
 .rGame ul {
   display: flex;
+  width: 100%;
+  height: 320px;
 }
 
 .rGame ul li {
   position: relative;
-  text-align: center;
+  /* text-align: center; */
   flex: 1;
   margin-right: 8px;
   height: 342px;
@@ -295,6 +297,8 @@
   word-wrap: normal;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 12px;
+  float: left;
 }
 
 
