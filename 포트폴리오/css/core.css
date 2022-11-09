@@ -133,8 +133,16 @@
   display: block;
   font-size: 17px;
   padding: 0 10px;
+  display: block;
+  height: 62px;
+  *height: 43px;
+  padding: 24px 3px 0;
+  *padding: 21px 3px 0;
+  color: #17191d;
+  font: 14px NEXON Gothic;
 
 }
+
 
 
 /********** 배너 **********/
@@ -435,6 +443,11 @@
 .newGame ul {
   padding: 42px 0 68px;
 }
+.newGame ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .newGame li {
   position: relative;
   float: left;
@@ -545,20 +558,23 @@
   text-overflow: ellipsis;
 }
 
-
-/* 컨텐츠박스형 */
-.newGame {
-  height: 650px;
-}
-
 /* 컨텐츠박스형 */
 .rank {
   height: 650px;
 }
 
-/* 컨텐츠박스형 */
-.allGame {
-  min-height: 650px;
+/****************** 전체게임 ******************/
+  .allGame {
+    clear: both;
+    position: relative;
+    width: 1328px;
+    padding-left: 24px;
+    margin: 0 auto;
+}
+.allGame h2 {
+  height: 28px;
+  color: #17191d;
+  font: 24px NEXON Gothic Bold;
 }
 
 /* 컨텐츠박스형 */
