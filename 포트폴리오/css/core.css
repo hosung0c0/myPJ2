@@ -580,6 +580,46 @@
   color: #17191d;
   font: 24px NEXON Gothic Bold;
 }
+.allGame .viewtype {
+  position: absolute;
+  top: 0;
+  left: 127px;
+  width: 52px;
+}
+.allGame .viewtype fieldset>span {
+  display: inline-block;
+}
+.allGame .viewtype #thumbnail+label {
+  background-position: 0 -350px;
+}
+.allGame .viewtype #thumbnail+label .icon {
+  background-position: 0 -400px;
+}
+.allGame .viewtype input[type=radio]+label .icon {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background: url(https://rs.nxfs.nexon.com/home/images/main/set_main.svg) no-repeat -350px 0;
+  opacity: 0;
+  transition: all .15s linear;
+}
+
+/**************************************/
+.allGame .search {
+  position: absolute;
+  top: -10px;
+  right: 24px;
+}
+.acchidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+}
+
+
 
 /* 컨텐츠박스형 */
 /* .pt6{
