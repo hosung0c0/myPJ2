@@ -10,39 +10,6 @@
     min-height: 62px;
 }
 
-/*********** 2. 하단영역 ***********/
-.footer{
-    position: relative;
-    width: 100%;
-    min-height: 278px;
-    margin-top: 200px;
-    text-align: left;
-    background-color: #222426;
-}
-
-#wrapper a, #wrapper button, #wrapper label {
+a, button, label{
     transition: all .15s linear,bottom 0s;
-}
-
-a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, button, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, input[type=text], ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: top;
-    border-radius: 0;
-    box-sizing: border-box;
-    -webkit-text-size-adjust: none;
-    touch-action: manipulation;
-}
-
-body, button, input {
-    color: #737881;
-    font: 12px malgun gothic,"sans serif";
-}
-
-a{
-color: #737881;
-    text-decoration: none;
 }
