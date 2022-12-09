@@ -130,7 +130,7 @@
   color: #17191d;
   font: 14px NEXON Gothic;
   line-height: 62px;
-  
+
 }
 
 .gnbRight>ul>li:last-child a {
@@ -144,7 +144,7 @@
   font: 15px NEXON Gothic Bold;
   border-radius: 19px;
   border: 2px solid #17191d;
-  
+
 }
 
 
@@ -152,10 +152,36 @@
 
 
 /********** 배너 **********/
-.banner {
-  height: 560px;
-  width: 100%;
-  background-image: url();
+#cont>section {
+  position: relative;
+    width: 100%;
+    /* width: 100vw; */
+    height: 100%;
+    /* height: 29.16vw; */
+    min-width: 1024px;
+    min-height: 341px;
+    min-height: 341.33333px;
+    max-height: 560px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#banner {
+  display: flex;
+
+  position: absolute;
+}
+
+#banner li img {
+  position: relative;
+    min-width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    opacity: 0;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+
 }
 
 /********** 내정보, 추천게임 **********/
