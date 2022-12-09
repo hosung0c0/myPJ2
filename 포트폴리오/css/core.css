@@ -273,11 +273,12 @@ li {
   width: 153px;
   height: 342px;
 }
-.rGame .gameImg{
-    display: block;
-    width: 153px;
-    height: 192px;
-    overflow: hidden;
+
+.rGame .gameImg {
+  display: block;
+  width: 153px;
+  height: 192px;
+  overflow: hidden;
 }
 
 .rGame .gameCate span {
@@ -336,11 +337,13 @@ li {
   font-size: 12px;
   float: left;
 }
-.rGame #yes a:hover img{
+
+.rGame #yes a:hover img {
   transform: scale(1.1) translateZ(0);
 }
-.rGame  a:hover {
-  box-shadow:0 5.5px 15px 0 rgba(0, 0, 0, 0.19);
+
+.rGame #yes a:hover {
+  box-shadow: 0 5.5px 15px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -373,7 +376,8 @@ li {
   text-align: center;
   background-color: #17191d;
 }
-.nexon a:hover{
+
+.nexon a:hover {
   background-color: #07f;
 }
 
@@ -399,7 +403,8 @@ li {
   text-align: center;
   background-color: #4a4e57;
 }
-.login .etc a:hover{
+
+.login .etc a:hover {
   background-color: #07f;
 }
 
@@ -472,7 +477,6 @@ li {
 .newGame {
   clear: both;
   width: 1328px;
-  padding-left: 24px;
   margin: 0 auto;
 }
 
@@ -612,7 +616,6 @@ li {
   background-color: #fff;
   letter-spacing: -.3px;
   z-index: 5;
-  white-space: nowrap;
   overflow: hidden;
 
 }
@@ -628,7 +631,6 @@ li {
 .allGame {
   clear: both;
   width: 1328px;
-  padding-left: 24px;
   margin: 0 auto;
 }
 
@@ -646,7 +648,7 @@ li {
 }
 
 /**************************************/
-.allGame .pc.cardView  {
+.allGame .pc.cardView {
   padding: 15px 0 40px;
   height: auto;
 }
@@ -680,6 +682,7 @@ li {
   top: 0;
   left: 0;
 }
+
 .allGame .pc.cardView .gameName {
   position: absolute;
   top: 0;
@@ -703,48 +706,25 @@ li {
   padding-right: 24px;
   height: 36px;
   margin: 0 auto;
-  font: 16px bold ;
+  font: 16px bold;
   color: #000;
 }
 
 .allGame .pc.cardView .gamePeriod {
-  display: block;
-  width: 262px;
-  height: 32px;
-  margin: 50px auto 0;
-  color: #737881;
-  letter-spacing: -.3px;
-  overflow: hidden;
-}
 
-.allGame .pc.cardView .gamePeriod .event {
-  font-weight: 700;
-  color: #07f;
-  padding-right: 4px;
-}
-
-.allGame .gameGenre {
-  display: inline-block;
-  color: #9fa1a7;
-  text-transform: uppercase;
-}
-
-.allGame .gameDeco {
-  display: block;
-  width: 100%;
-  margin-bottom: 12px;
 }
 
 
 /********************* 하단영역 *********************/
 .footer {
-    position: relative;
-    width: 100%;
-    min-height: 278px;
-    margin-top: 200px;
-    text-align: left;
-    background-color: #222426;
+  position: relative;
+  width: 100%;
+  min-height: 278px;
+  margin-top: 200px;
+  text-align: left;
+  background-color: #222426;
 }
+
 
 .footer .sns {
   position: absolute;
@@ -764,12 +744,12 @@ li {
   background-position: 0 -50px;
 }
 .footer .sns .twitter {
-width: 18px;
-background-position: 0 -100px;
+  width: 18px;
+  background-position: 0 -100px;
 }
 .footer .sns .facebook {
-width: 9px;
-background-position: 0 -150px;
+  width: 9px;
+  background-position: 0 -150px;
 }
 .footer .icon {
   display: inline-block;
@@ -780,23 +760,57 @@ background-position: 0 -150px;
   background-color: #fff;
   transition: all .15s linear;
 }
-.footer .sns a:hover .icon{
+.footer .sns a:hover .icon {
   background-color: #07f;
 }
+
 
 .footer .notice {
   height: 73px;
   padding: 28px 0 0 40px;
-  border-bottom: 1px solid hsla(0,0%,100%,.1);
+  border-bottom: 1px solid hsla(0, 0%, 100%, .1);
 }
 .footer .notice a {
   color: #fff;
   font-weight: 700;
-  letter-spacing: -.3px;
+}
+.footer .notice a:hover{
+  text-decoration: underline;
 }
 
+.footer .nav {
+  padding: 31px 96px 0 40px;
+}
+.footer .nav+.nav {
+  padding: 14px 96px 13px 40px;
+}
+.footer .nav li {
+  display: inline-block;
+}
+.footer .nav li:after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  margin: 2px 12px 0;
+  background-color: hsla(0,0%,100%,.2);
+}
+.footer .nav a {
+  color: rgba(248,249,250,.7);
+}
+.footer .nav a:hover {
+  color: #07f;
+}
 
-
+.footer .language {
+  position: absolute;
+  top: 85px;
+  right: 40px;
+  z-index: 100;
+}
+.footer .language h3 a {
+  background-color: #393a3c;
+}
 
 
 /* 컨텐츠박스형 */
