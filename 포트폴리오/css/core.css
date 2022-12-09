@@ -273,6 +273,12 @@ li {
   width: 153px;
   height: 342px;
 }
+.rGame .gameImg{
+    display: block;
+    width: 153px;
+    height: 192px;
+    overflow: hidden;
+}
 
 .rGame .gameCate span {
   display: block;
@@ -330,6 +336,14 @@ li {
   font-size: 12px;
   float: left;
 }
+.rGame #yes a:hover img{
+  transform: scale(1.1) translateZ(0);
+}
+.rGame  a:hover {
+  box-shadow:0 5.5px 15px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 
 /********** 로그인 **********/
 .login {
@@ -658,10 +672,23 @@ li {
   width: 302px;
 }
 
+.allGame .pc.cardView .gameImg img {
+  transform: scale(1) translateZ(0);
+}
+
 .allGame .pc.cardView .game img {
   position: absolute;
   top: 0;
   left: 0;
+}
+.allGame .pc.cardView .gameName {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 .allGame .gameName a {
@@ -680,6 +707,22 @@ li {
   font: 16px bold ;
   color: #000;
 }
+
+.allGame .pc.cardView .gamePeriod {
+  display: block;
+  width: 262px;
+  height: 32px;
+padding-top: 200px;
+  color: #737881;
+ 
+}
+
+.allGame .gameDeco {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
 
 /********************* 하단영역 *********************/
 .footer {
