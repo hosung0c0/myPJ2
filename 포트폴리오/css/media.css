@@ -26,9 +26,18 @@
     }
 
     /* 전체게임 */
-    .allGame{
+    /* .allGame{
         width: 1002px;
         padding-left: 24px;
-    }
+    } */
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .allGame .pc.cardView li {
+        flex-basis: 31%;
+      }
 
 }
