@@ -811,6 +811,14 @@ li {
 .footer .language h3 a {
   background-color: #393a3c;
 }
+.footer .language a {
+  display: block;
+  width: 140px;
+  height: 34px;
+  padding: 9px 0 0 14px;
+  letter-spacing: -.3px;
+  color: rgba(248,249,250,.8);
+}
 
 
 /* 컨텐츠박스형 */
