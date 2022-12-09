@@ -15,7 +15,8 @@
 
 
 /* 공사중 표시 */
-.banner, .allGame li {
+.banner,
+.allGame li {
   outline: 1px dashed gray;
 }
 
@@ -120,19 +121,33 @@
   line-height: 62px;
 }
 
-.gnbRight>ul>li>a {
+.gnbRight>ul>li:first-child>a {
   display: block;
   font-size: 17px;
   padding: 0 10px;
   display: block;
   height: 62px;
-  *height: 43px;
-  padding: 24px 3px 0;
-  *padding: 21px 3px 0;
   color: #17191d;
   font: 14px NEXON Gothic;
-
+  line-height: 62px;
+  
 }
+
+.gnbRight>ul>li:last-child a {
+  display: block;
+  min-width: 85px;
+  height: 36px;
+  padding: 7px 18px 0;
+  margin-top: 13px;
+  color: #080410;
+  text-align: center;
+  font: 15px NEXON Gothic Bold;
+  border-radius: 19px;
+  border: 2px solid #17191d;
+  
+}
+
+
 
 
 
@@ -628,11 +643,17 @@
   color: #17191d;
   font: 24px NEXON Gothic Bold;
 }
+
 .allGame .filter {
   position: relative;
-  padding: 20px 30px 3px;
+  padding: 20px 30px 3px 30px;
   margin: 29px 24px 20px 0;
   background-color: #fff;
+}
+
+.allGame .filter span {
+  display: inline-block;
+  margin: 0 16px 17px 0;
 }
 
 /**************************************/
@@ -705,9 +726,7 @@
   color: #000;
 }
 
-.allGame .pc.cardView .gamePeriod {
-
-}
+.allGame .pc.cardView .gamePeriod {}
 
 
 /********************* 하단영역 *********************/
@@ -726,35 +745,43 @@
   top: 25px;
   right: 38px;
 }
+
 .footer .sns li {
   display: inline-block;
   padding-left: 1px;
 }
+
 .footer .sns a {
   display: block;
   padding: 3px;
 }
+
 .footer .sns .youtube {
   width: 19px;
   background-position: 0 -50px;
 }
+
 .footer .sns .twitter {
   width: 18px;
   background-position: 0 -100px;
 }
+
 .footer .sns .facebook {
   width: 9px;
   background-position: 0 -150px;
 }
+
 .footer .icon {
   display: inline-block;
   background: url(https://rs.nxfs.nexon.com/home/images/main/set_footer.png) no-repeat 0 0;
 }
+
 .footer .sns .icon {
   height: 19px;
   background-color: #fff;
   transition: all .15s linear;
 }
+
 .footer .sns a:hover .icon {
   background-color: #07f;
 }
@@ -765,34 +792,41 @@
   padding: 28px 0 0 40px;
   border-bottom: 1px solid hsla(0, 0%, 100%, .1);
 }
+
 .footer .notice a {
   color: #fff;
   font-weight: 700;
 }
-.footer .notice a:hover{
+
+.footer .notice a:hover {
   text-decoration: underline;
 }
 
 .footer .nav {
   padding: 31px 96px 0 40px;
 }
+
 .footer .nav+.nav {
   padding: 14px 96px 13px 40px;
 }
+
 .footer .nav li {
   display: inline-block;
 }
+
 .footer .nav li:after {
   content: "";
   display: inline-block;
   width: 1px;
   height: 12px;
   margin: 2px 12px 0;
-  background-color: hsla(0,0%,100%,.2);
+  background-color: hsla(0, 0%, 100%, .2);
 }
+
 .footer .nav a {
-  color: rgba(248,249,250,.7);
+  color: rgba(248, 249, 250, .7);
 }
+
 .footer .nav a:hover {
   color: #07f;
 }
@@ -803,21 +837,25 @@
   right: 40px;
   z-index: 100;
 }
+
 .footer .language h3 a {
   background-color: #393a3c;
 }
+
 .footer .language a {
   display: block;
   width: 140px;
   height: 34px;
   padding: 9px 0 0 14px;
   letter-spacing: -.3px;
-  color: rgba(248,249,250,.8);
+  color: rgba(248, 249, 250, .8);
 }
+
 .footer .icon {
   display: inline-block;
   background: url(https://rs.nxfs.nexon.com/home/images/main/set_footer.png) no-repeat 0 0;
 }
+
 .footer .language .icon {
   position: absolute;
   top: 8px;
@@ -827,13 +865,16 @@
   background-position: 0 -250px;
   border-top: 1px solid #393a3c;
 }
+
 .footer .language a .icon {
   background-color: #fff;
   transition: background-color .15s linear;
 }
+
 .footer .language a:hover {
   color: #07f;
 }
+
 .footer .language a:hover .icon {
   background-color: #07f;
 }
@@ -841,20 +882,23 @@
 
 .footer .address {
   padding: 16px 96px 0 40px;
-  color: rgba(248,249,250,.3);
+  color: rgba(248, 249, 250, .3);
   font-size: 11px;
   line-height: 17px;
 }
+
 .footer .address a {
-  color: rgba(248,249,250,.3);
+  color: rgba(248, 249, 250, .3);
   text-decoration: underline;
 }
-.footer .address a:hover{
+
+.footer .address a:hover {
   color: #07f;
 }
+
 .footer .copyright {
   padding: 0 0 0 40px;
-  color: rgba(248,249,250,.3);
+  color: rgba(248, 249, 250, .3);
   font-size: 11px;
   line-height: 18px;
 }
@@ -864,11 +908,13 @@
   height: 83px;
   padding: 21px 0 0 39px;
 }
+
 .footer .logo .icon {
   width: 68px;
   height: 23px;
   float: left;
 }
+
 /* 컨텐츠박스형 */
 /* .pt6{
     min-height: 650px;

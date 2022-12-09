@@ -22,16 +22,13 @@
     /* 신규게임 */
     .newGame{
         width: 1002px;
-    }
-
-    /* 랭킹 */
-    .rank{
-
+        padding-left: 24px;
     }
 
     /* 전체게임 */
     .allGame{
-
+        width: 1002px;
+        padding-left: 24px;
     }
 
 }
