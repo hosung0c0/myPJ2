@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+
+@media screen and (max-width: 1412px) {
+
+    /* 추천게임, 내정보 */
+    .myInfo{
+        width: 954px;
+    }
+    .rGame{
+        width: 483px;
+    } 
+    .logined, .login{
+        width: 470px;
+        margin-left: 1px;
+    }
+    .login{
+        padding-left: 58px;
+    }
+
+
+    /* 신규게임 */
+    .newGame{
+        width: 1002px;
+        padding-left: 24px;
+    }
+
+    /* 전체게임 */
+    .allGame{
+        width: 1002px;
+        padding-left: 24px;
+    }
+
+}
