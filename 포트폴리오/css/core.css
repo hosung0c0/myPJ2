@@ -628,6 +628,12 @@
   color: #17191d;
   font: 24px NEXON Gothic Bold;
 }
+.allGame .filter {
+  position: relative;
+  padding: 20px 30px 3px;
+  margin: 29px 24px 20px 0;
+  background-color: #fff;
+}
 
 /**************************************/
 .allGame>ul:after {
