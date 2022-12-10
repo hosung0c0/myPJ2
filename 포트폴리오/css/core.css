@@ -73,6 +73,7 @@
 /********** 상단메뉴 **********/
 .menu {
   display: flex;
+  min-width: 1007px;
   width: 100%;
   box-shadow: 0px 2px rgba(128, 128, 128, 0.363);
 }
@@ -85,9 +86,10 @@
 .btnDown {
   text-align: left;
   margin-left: 20px;
-
+  animation: btnAni 1s linear 6s forwards;
 }
 
+/* 
 /* .btnDown a:first-of-type{
   
 }
@@ -152,36 +154,70 @@
 
 
 /********** 배너 **********/
-#cont>section {
+#cont>.section {
   position: relative;
-    width: 100%;
-    /* width: 100vw; */
-    height: 100%;
-    /* height: 29.16vw; */
-    min-width: 1024px;
-    min-height: 341px;
-    min-height: 341.33333px;
-    max-height: 560px;
-    overflow: hidden;
-    z-index: 1;
+  width: 100%;
+  width: 100vw;
+  height: 100%;
+  height: 29.16vw;
+  min-width: 1024px;
+  min-height: 341px;
+  min-height: 341.33333px;
+  max-height: 560px;
+  overflow: hidden;
+  z-index: 1;
 }
 
 #banner {
   display: flex;
 
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#banner li {
+  flex-shrink: 0;
+  flex-basis: 100%;
 }
 
 #banner li img {
   position: relative;
-    min-width: 1024px;
-    height: 100%;
-    margin: 0 auto;
-    opacity: 0;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
 
+}
+
+.abtn {display: inline;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /*Y축 중앙이동*/
+  cursor: pointer;
+  
+}
+
+/*왼쪽버튼*/
+.ab1 {
+  left: 150px;
+  width: 40px;
+  height: 33px;
+  background: url(https://rs.nxfs.nexon.com/home/images/main/set_promotion.png) no-repeat 0 0;
+}
+
+/*오른쪽버튼*/
+.ab2 {
+  right: 150px;
+  width: 40px;
+  height: 33px;
+  background: url(https://rs.nxfs.nexon.com/home/images/main/set_promotion.png) no-repeat -50px 0;
 }
 
 /********** 내정보, 추천게임 **********/
@@ -373,7 +409,7 @@
 }
 
 .rGame #yes a:hover {
-  box-shadow: 0 5.5px 15px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 5.5px 15px 0 rgba(0, 0, 0, 0.315);
 }
 
 
