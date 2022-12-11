@@ -144,7 +144,7 @@ function loadFn() {
         autoI = setInterval(() => {
             // 오른쪽버튼 클릭시 이동코드와 동일함!!! /////////
             banner.style.left = "-100%";
-            banner.style.transition = ".8s ease-in-out";
+            banner.style.transition = "1.3s ease-in-out";
             // 0.8초후 맨앞li 잘라서 맨뒤로 이동!
             setTimeout(() => {
                 // 1. 맨앞li 잘라서 맨뒤로 이동!

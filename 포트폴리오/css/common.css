@@ -13,3 +13,8 @@
 a, button, label{
     transition: all .15s linear,bottom 0s;
 }
+
+body {
+    font-weight: bold;
+}
+
