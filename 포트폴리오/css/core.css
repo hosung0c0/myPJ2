@@ -102,6 +102,7 @@
   line-height: 62px;
   transition: all .15s linear;
 }
+
 .btnDown a:hover {
   color: #07f;
 }
@@ -136,6 +137,7 @@
   font: 14px NEXON Gothic;
   line-height: 62px;
 }
+
 .gnbRight>ul>li:first-child>a:hover {
   color: #07f;
 }
@@ -152,6 +154,7 @@
   border-radius: 19px;
   border: 2px solid #17191d;
 }
+
 .gnbRight>ul>li:last-child a:hover {
   color: #fff;
   background-color: #07f;
@@ -276,8 +279,9 @@
 }
 
 .rbx>.myInfo>.title>.tibt>a:hover {
-    color: #07f;
+  color: #07f;
 }
+
 /********** 추천게임들 **********/
 /* 기본틀 */
 .rGame {
@@ -553,7 +557,9 @@
 .login .find a {
   margin-right: 16px;
 }
-.login .find a:hover , .login .join a:hover {
+
+.login .find a:hover,
+.login .join a:hover {
   color: #07f;
 }
 
@@ -790,7 +796,7 @@
   transition: all .15s linear;
 }
 
-.allGame .game:hover .gameImg img{
+.allGame .game:hover .gameImg img {
   transform: scale(1.1);
 }
 
@@ -805,10 +811,10 @@
 
 .allGame .gameName a {
   display: block;
-    width: 100%;
-    height: 100%;
-    padding-top: 215px;
-    color: #17191d;
+  width: 100%;
+  height: 100%;
+  padding-top: 215px;
+  color: #17191d;
 }
 
 
@@ -824,12 +830,24 @@
 
 
 .allGame .game .gameDeco {
+  content: '';
   position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 50px;
-  height: 50px;
-  background: url(../images/set_device_new.svg) no-repeat 10px 10px/250%;
+  bottom: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/set_device_new.svg);
+  background-repeat: no-repeat;
+  background-size: 500%;
+  background-position: -5px -3px;
+  z-index: 1000;
+}
+.allGame .game .gameDeco:hover {
+  background-image: url(../images/set_device_new.svg);
+  background-repeat: no-repeat;
+  background-size: 500%;
+  background-position: -80px -3px;
+  
 }
 
 .allGame .pc.cardView .gamePeriod {
