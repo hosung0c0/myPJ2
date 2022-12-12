@@ -602,6 +602,17 @@
   margin: 0 24px 52px 0;
   background-color: #fff;
   border-top: 2px solid #07f;
+  transition: all 0.3s linear 0s;
+}
+
+.newGame li a:hover {
+  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.16);
+  background-image: linear-gradient(315deg, #fff, #07f);
+  
+}
+
+.newGame li a:hover span {
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .newGame .game {
@@ -645,13 +656,36 @@
   background-color: #07f;
   border: 1px solid #07f;
 }
-
+.newGame a:hover .gameState span {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #07f;
+}
 .newGame .gameImg {
   position: absolute;
+  width: 140px;
+  height: 180px;
   top: -34px;
   right: 0;
   display: block;
   z-index: 1;
+  overflow: hidden;
+}
+
+.newGame .gameImg img {
+  position: absolute;
+  width: 140px;
+  height: 180px;
+  top: 0;
+  right: 0;
+  display: block;
+  z-index: 1;
+  transform: scale(1);
+  transition: all .15s linear, bottom 0s;
+}
+
+.newGame a:hover .gameImg img {
+  transform: scale(1.1);
 }
 
 .newGame .gameInfo {
@@ -674,8 +708,11 @@
   line-height: 1.25;
   color: #17191d;
   background-color: #fff;
+  
 }
-
+.newGame a:hover .gameName span {
+  font-size: 1.05rem;
+}
 .newGame .gameDevice {
   display: inline-block;
   height: 16px;
@@ -683,6 +720,7 @@
   color: #9fa1a7;
   background-color: #fff;
 }
+
 
 .newGame .gameDevice .iconDesktop {
   background-position: 0 0;
@@ -694,6 +732,14 @@
   height: 16px;
   margin-right: 3px;
   background: url(https://rs.nxfs.nexon.com/home/images/main/set_device_s_new.svg) no-repeat 0 0;
+}
+
+.newGame li a:hover .gameDevice {
+  color: #fff;
+}
+
+.newGame li a:hover .gameDevice .icon {
+  background: url(https://rs.nxfs.nexon.com/home/images/main/set_device_s_new.svg) no-repeat -50px 0;
 }
 
 .newGame .gameGenre {
@@ -715,6 +761,10 @@
   z-index: 5;
   overflow: hidden;
 
+}
+
+.newGame li a:hover .gamePeriod {
+  color: #fff;
 }
 
 /* 컨텐츠박스형 */
@@ -868,6 +918,7 @@
   font-size: 15px;
   font-weight: bold;
 }
+
 .allGame .open a:hover {
   color: #07f;
   text-decoration: underline;
@@ -888,6 +939,7 @@
 .footer .btnTop {
   bottom: 336px;
 }
+
 .footer .btnTop a {
   position: fixed;
   bottom: 20px;
