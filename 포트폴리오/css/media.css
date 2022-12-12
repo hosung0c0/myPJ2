@@ -62,3 +62,22 @@
         flex-basis: 31%;
     }
 }
+
+@media screen and (max-width: 415px) {
+    .menu {
+        min-width: 375px;
+        width: 100%;
+    }
+    .btnDown {
+        min-width: 66px;
+        margin-left: 10px;
+    }
+    .btnDown a{
+        font-size: 14px;
+    }
+
+    .logo img{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
