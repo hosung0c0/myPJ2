@@ -180,10 +180,11 @@ function loadFn() {
     } /////// clearAuto함수 ////////
 
 
-    const open = querySelector(".open");
-    open.addEventListener("click", () => {
-        const 
-    });
+    // 전체보기
+    // const open = querySelector(".open");
+    // open.addEventListener("click", () => {
+    //     const 
+    // });
 
 } //////////////// loadFn 함수 ///////////////
 /////////////////////////////////////////////
