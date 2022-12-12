@@ -7,7 +7,9 @@
 
 /*********** 1. 상단영역 ***********/
 .top{
+
     min-height: 62px;
+    z-index: 99999;
 }
 
 a, button, label{

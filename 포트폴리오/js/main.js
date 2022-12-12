@@ -178,5 +178,12 @@ function loadFn() {
         // 3. 일정시간 후 다시 인터발 호출!
         autoT = setTimeout(bannerAuto, 5000);
     } /////// clearAuto함수 ////////
+
+
+    const open = querySelector(".open");
+    open.addEventListener("click", () => {
+        const 
+    });
+
 } //////////////// loadFn 함수 ///////////////
 /////////////////////////////////////////////

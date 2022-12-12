@@ -790,7 +790,7 @@
   overflow: hidden;
 }
 
-.allGame>.pc.cardView .gameImg img {
+.allGame .pc.cardView .gameImg img {
   width: 100%;
   transform: scale(1);
   transition: all .15s linear;
@@ -842,12 +842,13 @@
   background-position: -5px -3px;
   z-index: 1000;
 }
+
 .allGame .game .gameDeco:hover {
   background-image: url(../images/set_device_new.svg);
   background-repeat: no-repeat;
   background-size: 500%;
   background-position: -80px -3px;
-  
+
 }
 
 .allGame .pc.cardView .gamePeriod {
@@ -861,6 +862,18 @@
   font-weight: bold;
 }
 
+.allGame .open a {
+  position: absolute;
+  right: 13px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.allGame .open a:hover {
+  color: #07f;
+  text-decoration: underline;
+}
+
+
 
 /********************* 하단영역 *********************/
 .footer {
@@ -871,6 +884,54 @@
   text-align: left;
   background-color: #222426;
 }
+
+.footer .btnTop {
+  bottom: 336px;
+}
+.footer .btnTop a {
+  position: fixed;
+  bottom: 20px;
+  right: 34px;
+  z-index: 1000;
+  width: 110px;
+  height: 36px;
+  border: 2px solid #9fa1a7;
+  overflow: hidden;
+}
+
+.footer .btnTop a:hover {
+  border-color: #07f;
+}
+
+.footer .btnTop span {
+  position: absolute;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  top: 4px;
+  left: 24px;
+  line-height: 24px;
+}
+
+.footer .btnTop a:hover span {
+  color: #07f;
+}
+
+.footer .btnTop .icon {
+
+  top: 4px;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  background: url(https://rs.nxfs.nexon.com/home/images/main/set_floating.svg) no-repeat 0 0;
+}
+
+.footer .btnTop a:hover .icon {
+  background: url(https://rs.nxfs.nexon.com/home/images/main/set_floating.svg) no-repeat -50px 0;
+}
+
+
 
 
 .footer .sns {

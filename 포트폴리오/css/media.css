@@ -1,26 +1,45 @@
 @charset "utf-8";
 
+@media screen and (max-width: 1588px) {
+
+    .footer .btnTop a {
+        width: 36px;
+    }
+
+    .footer .btnTop span {
+        display: none;
+    }
+
+    .footer .btnTop .icon {
+        display: block;
+        left: 4px;
+    }
+}
 
 @media screen and (max-width: 1412px) {
 
     /* 추천게임, 내정보 */
-    .myInfo{
+    .myInfo {
         width: 954px;
     }
-    .rGame{
+
+    .rGame {
         width: 483px;
-    } 
-    .logined, .login{
+    }
+
+    .logined,
+    .login {
         width: 470px;
         margin-left: 1px;
     }
-    .login{
+
+    .login {
         padding-left: 58px;
     }
 
 
     /* 신규게임 */
-    .newGame{
+    .newGame {
         width: 1002px;
         padding-left: 24px;
     }
@@ -36,8 +55,10 @@
 
 @media screen and (max-width: 1024px) {
 
+    .allGame .pc.cardView {
+        width: 973px;
+    }
     .allGame .pc.cardView li {
         flex-basis: 31%;
-      }
-
+    }
 }
